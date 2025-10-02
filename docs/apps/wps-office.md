@@ -47,17 +47,16 @@ WPS Office включает следующие приложения:
 <AGWGallery />
 
 <!--@include: @apps/.parts/install/content-flatpak.md-->
+
 <!--@include: @apps/.parts/install/content-epm-play.md-->
 
-::: warning
-На данный момент обнаружена проблема c работой системы скинов после установки epm play.
+::: tip Если хотите версию свежее - доступна китайская версия
 
-Для исправления можно воспользоваться командой:
+Глобально доступна только 11 версия, но через eepm можно установить китайскую.
+
+(Доступна с выпуска `EPM` 3.64.28)
+
 ```shell
-su -
-rm /opt/kingsoft/wps-office/office6/libstdc++.so*
+epm play wpsoffice-cn
 ```
-После обновления epm в ближайшее время ошибка будет исправлена. (Исправлено в версии 3.64.0)
-
-Подробнее: [[[Github [Etersoft/EEPM #266]](https://github.com/Etersoft/eepm/issues/266)]]
 :::

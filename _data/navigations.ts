@@ -23,14 +23,28 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
         items: [
           { text: 'Быстрый старт', link: '/quick-start' },
           {
+            text: 'GNOME в Альте',
+            items: [
+              { text: 'ALT Regular Gnome', link: '/alt-regular-gnome' },
+              { text: 'ALT Starterkit Gnome', link: '/alt-starterkit-gnome' },
+              { text: 'Альт Рабочая станция', link: '/alt-workstation' }
+            ],
+            collapsed: true
+          },
+          {
             text: 'Установка',
             link: '/download',
             items: [
               { text: 'Установка на Mac', link: '/macbook' },
               { text: 'Создание загрузочного диска ALT Regular Gnome', link: '/bootable-drive' },
+              { text: 'Руководство по установке', link: '/ordinary-install' },
               { text: 'Установка рядом с MacOS', link: '/install-on-macbook-with-opencore-parallel' }
             ],
             collapsed: true
+          },
+          {
+            text: 'Безопасность',
+            link: '/security'
           },
           {
             text: 'Установка и обновление программ',
@@ -89,6 +103,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'GitHub Desktop', link: '/github-desktop' },
               { text: 'Google Chrome', link: '/google-chrome' },
               { text: 'GPU Screen Recorder', link: '/gpu-screen-recorder' },
+              { text: 'Gradia', link: '/gradia' },
               { text: 'Gimp', link: '/gimp' },
               { text: 'Hardware Probe', link: '/hw-probe' },
               { text: 'Helvum', link: '/helvum' },
@@ -101,6 +116,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'LibreOffice', link: '/libreoffice' },
               { text: 'Loupe', link: '/loupe' },
               { text: 'Lunacy', link: '/lunacy' },
+              { text: 'Linux Theme Store', link: '/linux-theme-store' },
               { text: 'Lutris', link: '/lutris' },
               { text: 'LibreWolf', link: '/librewolf' },
               { text: 'Meridius', link: '/meridius' },
@@ -145,6 +161,7 @@ export const sidebar: Record<string, DefaultTheme.Sidebar> = {
               { text: 'Toolbox', link: '/toolbox' },
               { text: 'Totem', link: '/totem' },
               { text: 'Transmission', link: '/transmission' },
+              { text: 'Tuner', link: '/tuner' },
               { text: 'Turtle', link: '/turtle' },
               { text: 'Ungoogled-chromium', link: '/ungoogled-chromium' },
               { text: 'Vesktop', link: '/vesktop' },

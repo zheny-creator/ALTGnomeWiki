@@ -8,9 +8,10 @@ import { normalize } from '../support/utils'
 /* Tools */
 
 import vueDevTools from 'vite-plugin-vue-devtools'
+import { visualizer } from "rollup-plugin-visualizer"
 
 /* Markdown */
-import { default as createContainer } from '../theme/composables/customContainers'
+import { createContainerPlugin } from '@alt-gnome/markdown-it-custom-containers';
 import VitepressMarkdownTimeline from 'vitepress-markdown-timeline'
 import markdownItKbd from 'markdown-it-kbd'
 import markdownItTaskLists from 'markdown-it-task-lists'
@@ -32,6 +33,7 @@ import {
   PageProperties,
   PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite'
+
 import { alignmentContainers, headTransformer, nolebaseGitChangelogOptions } from './plugins'
 
 export const shared = defineConfig({
@@ -49,8 +51,16 @@ export const shared = defineConfig({
     ['meta', { name: 'yandex-verification', content: '6ef3a36c3d09e43e' }]
   ],
   vite: {
+    build: {
+      chunkSizeWarningLimit: 1600
+    },
     plugins: [
       vueDevTools(),
+      visualizer({
+        gzipSize: true,
+        brotliSize: true,
+        filename: "./.tools/chunk_analyse/stats.html",
+      }) as PluginOption,
       UnoCSS(),
       GitChangelog(nolebaseGitChangelogOptions.plugin),
       GitChangelogMarkdownSection(nolebaseGitChangelogOptions.pluginSections),
@@ -127,9 +137,9 @@ export const shared = defineConfig({
       detailsLabel: 'Подробнее'
     },
     config: (md) => {
-      for (const [name, opts] of alignmentContainers) {
-        md.use(...createContainer(name, opts, md))
-      }
+      md.use(createContainerPlugin, {
+        containers: alignmentContainers
+      })
       md.use(markdownItKbd)
       md.use(markdownItTaskLists)
       md.use(VitepressMarkdownTimeline)

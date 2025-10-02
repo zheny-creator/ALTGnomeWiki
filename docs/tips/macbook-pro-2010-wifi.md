@@ -5,9 +5,9 @@
 - Не работает Wi-Fi
 - Не подключается к сети
 
-### При использовании bcmwl драйвера
+### При использовании `bcmwl` драйвера
 
-- На драйверах kernel-modules-bcmwl-un-def не работает сканирование сети
+- На драйверах `kernel-modules-bcmwl-un-def` не работает сканирование сети
 - Ошибки в логах:
 
 ```shell
@@ -15,7 +15,7 @@ ERROR @wl_notify_scan_status :
 wlp2s0 Scan_results error (-22)
 ```
 
-### При использовании firmware установленного через b43-fwcutter
+### При использовании firmware установленного через `b43-fwcutter`
 
 ```shell
 b43-phy0 ERROR: DMA RX reset timed out
@@ -25,14 +25,15 @@ b43 ssb0:0: timeout waiting for bitmask 01800000 on register 0F90 to clear
 
 ## Обходное решение
 
-::: code-block
-
+1. Подготовка пакетов
+::: tabs
+==apt-get
 ```shell[apt-get]
 su -
 apt-get remove kernel-modules-bcmwl-un-def bcmwl-kernel-config
 apt-get install b43-fwcutter
 ```
-
+==epm
 ```shell[epm]
 su -
 epm remove kernel-modules-bcmwl-un-def bcmwl-kernel-config
@@ -40,6 +41,8 @@ epm install b43-fwcutter
 ```
 
 :::
+
+2. Установка firmware
 
 ```shell
 # скачать с этого ресурса или найти в другом месте

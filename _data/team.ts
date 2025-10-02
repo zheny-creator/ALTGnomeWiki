@@ -50,6 +50,7 @@ export const contributions = [
   {
     avatar: 'https://avatars.githubusercontent.com/u/168869588?v=4',
     name: 'Владислав Темнов',
+    mapByNameAliases: ['trashb1t'],
     title: 'Разработчик, Участник',
     links: [{ icon: 'github', link: 'https://github.com/trashb1t' }]
   },
@@ -261,11 +262,11 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/1qXUImsZFTN'
   },
   {
-    avatar: 'https://github.com/feyte11.png',
+    avatar: 'https://github.com/linecodesx.png',
     name: 'Хачатур Тоникян',
-    mapByNameAliases: ['Feytell228', 'feyte11', 'Khachatur Tonikyan'],
+    mapByNameAliases: ['Feytell228', 'feyte11', 'Khachatur Tonikyan', 'linecodesx'],
     title: 'Участник',
-    links: [{ icon: 'github', link: 'https://github.com/feyte11' }],
+    links: [{ icon: 'github', link: 'https://github.com/linecodesx' }],
     actionText: 'Поддержать',
     sponsor:
       'https://www.tinkoff.ru/collectmoney/crowd/tonikyan.khachatur1/4ijqV39898/?short_link=93LEZqrEeY7&httpMethod=GET'
@@ -317,9 +318,9 @@ export const contributions = [
     sponsor: 'https://www.tinkoff.ru/cf/5Jo6TxAo9Un'
   },
   {
-    avatar: 'https://github.com/Cyber-X-Code.png',
-    name: 'Cyber:X',
-    mapByNameAliases: ['Cyber-X', 'Cyber-X-Code'],
+    avatar: 'https://github.com/Cron-X.png',
+    name: '[Cron:X]',
+    mapByNameAliases: ['Cyber-X', 'Cyber-X-Code', 'Cron-X'],
     title: 'Участник',
     links: [{ icon: 'github', link: 'https://github.com/Cyber-X-Code' }]
   },

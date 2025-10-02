@@ -3,6 +3,7 @@
   "[Aa]lacarte",
   "[Aa]ni[Ll]ibrix",
   "[Bb]iblioteca",
+  "[Cc]ontroller",
   "[Ee]asy[Ee]ffects",
   "[Ee]e?pm",
   "[Ff]latpak",
@@ -38,6 +39,7 @@
   "МойОфис",
   "подами",
   "хеши",
+  "этажи",
   "AddWater",
   "AGWCategories",
   "AGWGallery",
@@ -45,6 +47,7 @@
   "app",
   "AppImage",
   "AppIndicators",
+  "Arch Linux",
   "arduinoide",
   "audiosharing",
   "BaseALT",
@@ -116,6 +119,7 @@
   "RAAML",
   "rog",
   "Ryzen",
+  "Secure Boot",
   "Serpulo",
   "SimpleScan",
   "Snaps",
@@ -164,5 +168,10 @@
   "ddterm",
   "Orca",
   "VXE",
-  "wilmet"
+  "wilmet",
+  "HandsFree",
+  "XM3",
+  "980PRO",
+  "linuxthemestore",
+  "gradia"
 ]

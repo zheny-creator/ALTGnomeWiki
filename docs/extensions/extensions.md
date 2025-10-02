@@ -60,7 +60,8 @@ gallery:
 
 - С помощью веб-интерфейса [GNOME Extensions](https://extensions.gnome.org).
 - Установить пакет с расширением, к примеру:
-  ::: code-group
+
+::: code-group
 
 ```shell[apt-get]
 su -
@@ -154,6 +155,11 @@ gnome-extensions caffeine@patapon.info
 
 ```shell
 gnome-extensions uninstall caffeine@patapon.info
+```
+
+Сброс настроек расширения:
+```shell
+dconf reset -f /org/gnome/shell/extensions/caffeine
 ```
 
 ## Локальная установка расширений с использованием исходников релиза сайта GNOME Extensions или GitHub

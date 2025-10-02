@@ -1,4 +1,6 @@
 aarch
+Arch Linux
+ArchLinux
 ACPI
 ALAC
 bootloader
@@ -21,20 +23,31 @@ framebuffer
 fullscreen
 GART
 instdebug
+LUKS1
+LUKS2
 modesetting
 MPRIS
 MTRR
 noarch
 nomodeset
 NTSC
+NVME
 PCIROM
+PingOfDeath
+Ping Of Death
 POSIX
 PRAMIN
 Quadro
 RTSP
+Secure Boot
+SecureBoot
+Smurf
 simpledrm
+Syn Flood
+SynFlood
 taskrc
 TMDS
+TOTP
 tmpfs
 UEFI
 vaapi
@@ -50,3 +63,5 @@ AMDGPU
 Chipset
 XHCI
 maint
+Глассморфизм*
++а
